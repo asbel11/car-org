@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+<div class="post-entry">
+<h2>{{ post.title }}</h2>
+<p>{{ post.body }}</p>
+{% if post.image %}
+<img src="{{post.image.url}}" width=1000 height="600">
+{% endif %}
+</div>
+</div>
+
+
+<a href="{% url 'post_edit' cars.pk %}">+ Edit Blog Post</a>
+<a href="{% url 'post_delete' cars.pk %}">+ Delete Blog Post</a>
+<a href="{% url 'post_edit' cars.pk %}">+ Edit Blog Post</a>
+
+<style>
+    div{
+        text-align: center;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #cfb968;
+      
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #955353;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333333;
+    }
+    
+    p {
+      color: #666666;
+      line-height: 1.6;
+    }
+  </style>
+{% endblock content %}

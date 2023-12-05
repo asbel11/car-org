@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+<h1>Delete post</h1>
+<form action="" method="post">{% csrf_token %}
+<p>Are you sure you want to delete "{{ post.title }}"?</p>
+<input type="submit" value="Confirm">
+</div>
+</ form >
+<style>
+    div{
+        text-align: center;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #cfb968;
+      
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #955353;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333333;
+    }
+    
+    p {
+      color: #666666;
+      line-height: 1.6;
+    }
+  </style>
+{% endblock content %}
+

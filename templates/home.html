@@ -1,0 +1,76 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+
+<body 
+{% load static %}
+style="background-color:rgb(139, 107, 68);">
+<img src="{% static 'amgone.jpg' %}" alt="My image"style="width:1500px;height:600px;">
+
+
+
+
+
+<h1>Welcome to Cars and parts online</h1>
+<br>
+<br>
+
+</body>
+<div>
+{% if user.is_authenticated %}
+<p> Welcome {{user.username}}</p>
+<a href="{% url 'logout' %}">Log Out</a>
+{% else %}
+<p>You are not logged in.</p>
+<a href="{% url 'login' %}">Log In</a>
+<a href="{% url 'signup' %}">Sign Up</a>
+{% endif %}
+<style>
+    div{
+        font-size: larger;
+        text-align: center;
+    }
+   
+</style>
+<a href="{% url 'post_new' %}">+ New Blog Post</a>
+</div>
+<br> <br>
+
+
+<br>
+<div>
+
+{% for cars in cars_list %}
+<div class="post-entry">
+<p><a href = "{%url 'post_detail' cars.pk %}"></p>
+<p><li>{{ cars.author }}</li></p>
+<p></p>{{ cars.title }}</p>
+{{ cars.body }}
+
+
+    </div>
+</div>
+{% endfor %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<style>
+
+</style>
+
+
+
+
+{% endblock content %}
+
+
+
+

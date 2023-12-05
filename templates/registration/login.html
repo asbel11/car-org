@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+<h1>Log In</h1>
+<form action="" method="post">{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">Log In</button>
+</div>
+</ form >
+<style>
+    div{
+        text-align: center;
+        
+    }
+    body {
+      font-family: Arial, sans-serif;
+      text-emphasis-color: black;
+      background-color: #167cdb;
+    
+      
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #000000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      
+    }
+    
+    h1 {
+      color: #333333;
+    }
+    
+    p {
+      color: #666666;
+      line-height: 1.6;
+    }
+    
+  </style>
+
+{% endblock content %}
+

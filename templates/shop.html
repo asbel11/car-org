@@ -1,0 +1,106 @@
+{%  extends  "base.html"   %}
+{%  block content  %}
+{% load static %}
+<img src="{% static 'amgonee.jpg' %}" alt="My image"style="width:1400px;height:650px;">
+<h1>Shop Recomandation</h1>
+</header>
+<body>
+<main>
+    <h2>Find the Best Car Mechanical Shops in Your Area</h2>
+    <p>Whether you need routine maintenance or major repairs, it's important to find a reliable and trustworthy car mechanical shop. Check out our list of top-rated shops in your area:</p>
+
+    <ul>
+        <li>
+            <h3>Auto Care Center</h3>
+            <p>123 Main St, Anytown, USA</p>
+            <p>Rating: 4.8 stars</p>
+        </li>
+        <li>
+            <h3>Quick Fix Auto</h3>
+            <p>456 Broadway, Yourcity, USA</p>
+            <p>Rating: 4.5 stars</p>
+        </li>
+        <li>
+            <h3>Master Mechanics</h3>
+            <p>789 Elm St, Theirtown, USA</p>
+            <p>Rating: 4.3 stars</p>
+        </li>
+        <li>
+            <h3>Expert Auto Repair</h3>
+            <p>321 Oak St, Othertown, USA</p>
+            <p>Rating: 4.2 stars</p>
+        </li>
+        <li>
+            <h3>Pro Auto Care</h3>
+            <p>555 Main St, Thiscity, USA</p>
+            <p>Rating: 4.0 stars</p>
+        </li>
+    </ul>
+
+    <p>These shops have been rated by satisfied customers in your area, so you can trust that they provide quality service and expertise. Don't forget to call ahead and make an appointment to ensure the best experience possible.</p>
+</main>
+<style>
+    body{
+        background:rgb(233, 237, 223)
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+    main {
+        margin: 20px;
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-top: 40px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+
+    p {
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin-bottom: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #e24646;
+        padding: 10px;
+        text-align: center;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+        border-bottom: 2px solid #333;
+        transition: border-bottom-color 0.3s ease-in-out;
+    }
+
+    a:hover {
+        border-bottom-color: #fff;
+    }
+</style>
+
+</body>
+</html>
+
+{%  endblock content  %}

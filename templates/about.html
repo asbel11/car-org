@@ -1,0 +1,106 @@
+{%  extends  "base.html"   %}
+{%  block content  %}
+{% load static %}
+<h1>About Us</h1>
+<main>
+    <section class="hero">
+        <h1>Welcome to Our Car Dealership and Community Website</h1>
+        <p>Find your dream car, connect with fellow car enthusiasts, and learn everything you need to know about the world of cars.</p>
+        
+    </section>
+
+    <section class="car-section">
+        <h2>Cars for Sale</h2>
+        <p>Check out our current inventory of high-quality used cars.</p>
+        <a href="#" class="btn">View Inventory</a>
+    </section>
+
+    <section class="community-section">
+        <h2>Join Our Community Forum</h2>
+        <p>Connect with fellow car enthusiasts, share your experiences, and get expert advice.</p>
+        <a href="#" class="btn">Join Now</a>
+    </section>
+
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>We are a team of passionate car enthusiasts who want to share our knowledge and expertise with the world.</p>
+        <a href="#" class="btn">Learn More</a>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have a question or need help with something? We're here for you.</p>
+        <a href="#" class="btn">Contact Us</a>
+    </section>
+</main>
+<style>
+    body{
+        background:rgb(134, 112, 88)
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    main {
+        margin: 20px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    p {
+        line-height: 1.5;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    ul {
+        margin-bottom: 20px;
+       
+    }
+
+    li {
+        margin-bottom: 10px;
+       
+    }
+
+    footer {
+        background-color: #333;
+        color: #e24646;
+        padding: 10px;
+        text-align: center;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+        border-bottom: 2px solid #333;
+        transition: border-bottom-color 0.3s ease-in-out;
+       
+    }
+
+    a:hover {
+        border-bottom-color: #fff;
+    }
+
+{% endblock content %}
+
